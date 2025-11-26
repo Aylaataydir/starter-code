@@ -1,0 +1,30 @@
+
+//abstract
+
+@use "./abstracts/variables";
+
+//base
+
+@use "./base/reset";
+
+//componenents
+
+@use "./components/contact";
+@use "./components/footer";
+@use "./components/navbar";
+
+//layout
+
+
+
+//pages
+
+@use "./pages/bookmark";
+@use "./pages/contact";
+@use "./pages/fylo";
+@use "./pages/home";
+@use "./pages/insure";
+@use "./pages/manage";
+@use "./pages/portfolio";
+
+
