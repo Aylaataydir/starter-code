@@ -102,7 +102,7 @@ body {
   padding-block-start: 2rem;
 }
 
-.flex, nav, nav ul {
+.flex, .navbar, .navbar ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -112,14 +112,14 @@ nav, header, main, .contact, footer {
   min-width: 19.4375rem;
 }
 
-nav ul {
+.navbar ul {
   display: none;
   gap: 1.875rem;
 }
-nav ul a {
+.navbar ul a {
   color: #33323D;
 }
-nav .hamburger {
+.navbar .hamburger {
   display: block;
 }
 
@@ -128,10 +128,10 @@ nav .hamburger {
     padding-inline: 2.5rem;
     padding-block-start: 4rem;
   }
-  nav ul {
+  .navbar ul {
     display: flex;
   }
-  nav .hamburger {
+  .navbar .hamburger {
     display: none;
   }
 }
