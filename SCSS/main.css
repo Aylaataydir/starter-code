@@ -1,1 +1,142 @@
-/*# sourceMappingURL=main.css.map */
+@import url(https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:regular,500,600,700,italic,500italic,600italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Public+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+.p-1, body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  font-weight: 400;
+  color: #33323D;
+}
+
+.p-2 {
+  font-family: "Public Sans", sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.875rem;
+  font-weight: 400;
+  color: #33323D;
+}
+
+h1 {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 3.125rem;
+  line-height: 3.125rem;
+  font-weight: 700;
+  letter-spacing: -0.0281rem;
+  color: #203A4C;
+}
+
+h2 {
+  font-family: var("Ibarra Real Nova", serif);
+  font-size: 2.625rem;
+  line-height: 2.625rem;
+  font-weight: 700;
+  letter-spacing: -0.0225rem;
+  color: #203A4C;
+}
+
+h3 {
+  font-family: var("Ibarra Real Nova", serif);
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 400;
+  letter-spacing: -0.0181rem;
+  color: #203A4C;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  min-height: 100vh;
+  padding-inline: 2rem;
+  padding-block-start: 2rem;
+}
+
+.flex, nav, nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav, header, main, .contact, footer {
+  min-width: 19.4375rem;
+}
+
+nav ul {
+  display: none;
+  gap: 1.875rem;
+}
+nav ul a {
+  color: #33323D;
+}
+nav .hamburger {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-inline: 2.5rem;
+    padding-block-start: 4rem;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav .hamburger {
+    display: none;
+  }
+}
+@media (min-with: 90rem) {
+  body {
+    padding-inline: 10.25rem;
+  }
+}/*# sourceMappingURL=main.css.map */

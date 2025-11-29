@@ -1,0 +1,33 @@
+// @use "../abstracts/variables" as vars;
+// @use "../base/base" as base;
+
+// navigation
+
+@media (min-width:768px) {
+
+    body {
+        padding-inline: 2.5rem;
+        padding-block-start: 4rem;
+    }
+
+    nav {
+
+        ul {
+            display: flex;
+        }
+
+        .hamburger {
+            display: none;
+        }
+    }
+}
+
+
+@media (min-with:90rem){
+
+body {
+    padding-inline: 10.25rem;
+}
+
+
+}

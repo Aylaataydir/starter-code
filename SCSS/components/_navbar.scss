@@ -1,0 +1,24 @@
+@use "../abstracts/variables" as vars;
+@use "../base/base" as base;
+
+
+
+
+nav {
+    @extend .flex;
+
+    ul {
+        @extend .flex;
+        display: none;
+        gap: 1.875rem;
+        
+        a {
+            color:vars.$color-primary-grayish-dark-blue;
+        }
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+}

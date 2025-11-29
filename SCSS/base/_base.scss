@@ -1,0 +1,18 @@
+
+body {
+    min-height: 100vh;
+    padding-inline: 2rem;
+    padding-block-start: 2rem;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav, header, main, .contact, footer {
+    min-width: 19.4375rem;
+}
+

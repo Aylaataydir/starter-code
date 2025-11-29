@@ -1,0 +1,75 @@
+
+
+
+// COLORS
+
+// --- PRIMARY ---
+
+$color-primary-cyan: #5FB4A2; 
+$color-primary-dark-blue: #203A4C; 
+$color-primary-grayish-dark-blue: #33323D; 
+
+// --- SECONDARY & UTILITY ---
+
+$color-background: #FAFAFA; 
+$color-text-field: #EAEAEB; 
+$color-error: #F43030; 
+
+
+
+// FONT FAMILIES
+
+$font-family-ibarra: 'Ibarra Real Nova', serif;
+$font-family-public: 'Public Sans', sans-serif;
+
+
+
+// BODY 
+
+.p-1, body {
+  font-family:$font-family-public;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  font-weight: 400;
+  color: $color-primary-grayish-dark-blue;
+}
+
+
+.p-2 {
+  font-family: $font-family-public;
+  font-size: .9375rem;
+  line-height: 1.875rem;
+  font-weight: 400;
+  color: $color-primary-grayish-dark-blue;
+}
+
+// HEADINGS
+
+h1 {
+  font-family: $font-family-ibarra;
+  font-size: 3.125rem;
+  line-height: 3.125rem;
+  font-weight: 700;
+  letter-spacing: -0.0281rem;
+  color: $color-primary-dark-blue;
+}
+
+h2 {
+  font-family: var($font-family-ibarra);
+  font-size: 2.625rem;
+  line-height: 2.625rem;
+  font-weight: 700;
+  letter-spacing: -0.0225rem;
+  color: $color-primary-dark-blue;
+}
+
+h3 {
+  font-family: var($font-family-ibarra);
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 400;
+  letter-spacing: -0.0181rem;
+  color: $color-primary-dark-blue;
+}
+
+

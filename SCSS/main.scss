@@ -1,4 +1,3 @@
-
 //abstract
 
 @use "./abstracts/variables";
@@ -6,25 +5,28 @@
 //base
 
 @use "./base/reset";
+@use "./base/base";
 
 //componenents
 
-@use "./components/contact";
+@use "./components/contact" as components_contact;
 @use "./components/footer";
 @use "./components/navbar";
-
-//layout
-
+@use "./components/responsive";
 
 
 //pages
 
 @use "./pages/bookmark";
-@use "./pages/contact";
+@use "./pages/contact" as pages_contact;
 @use "./pages/fylo";
 @use "./pages/home";
 @use "./pages/insure";
 @use "./pages/manage";
 @use "./pages/portfolio";
 
+
+@import url(https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:regular,500,600,700,italic,500italic,600italic,700italic);
+
+@import url(https://fonts.googleapis.com/css?family=Public+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
