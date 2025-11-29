@@ -22,18 +22,21 @@
     <img class="hamburger" src="images/icons/hamburger.svg" alt="">
   </nav>
 
+  <!-- HERO  -->
+
   <header class="hero">
-    <img class="hero-img" src="images/homepage/mobile/image-homepage-hero@2x.jpg" alt="">
-    <div class="hero-text">
-      <h1>Hey, I’m Alex Spencer and I love building beautiful websites</h1>
-      <button class="hero-btn">
+    <picture class="hero__picture">
+      <source media="(min-width: 64rem)" srcset="images\homepage\desktop\image-homepage-hero@2x.jpg">
+      <source media="(min-width: 48rem)" srcset="images\homepage\tablet\image-homepage-hero@2x.jpg">
+      <img class="hero__img" src="images/homepage/mobile/image-homepage-hero@2x.jpg" alt="">
+    </picture>
+    <div class="hero__text">
+      <h2>Hey, I’m Alex Spencer and I love building beautiful websites</h2>
+      <button class="hero__btn">
         <img src="images/icons/down-arrows.svg" alt="">
         <p class="p-2">ABOUT ME</p>
       </button>
     </div>
-
-
-
   </header>
 
 

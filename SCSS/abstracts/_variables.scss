@@ -55,16 +55,16 @@ h1 {
 }
 
 h2 {
-  font-family: var($font-family-ibarra);
-  font-size: 2.625rem;
+  font-family: $font-family-ibarra;
+  font-size: 2.5rem;
   line-height: 2.625rem;
-  font-weight: 700;
+  font-weight: bold;
   letter-spacing: -0.0225rem;
   color: $color-primary-dark-blue;
 }
 
 h3 {
-  font-family: var($font-family-ibarra);
+  font-family:$font-family-ibarra;
   font-size: 2rem;
   line-height: 2rem;
   font-weight: 400;

@@ -26,16 +26,16 @@ h1 {
 }
 
 h2 {
-  font-family: var("Ibarra Real Nova", serif);
-  font-size: 2.625rem;
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 2.5rem;
   line-height: 2.625rem;
-  font-weight: 700;
+  font-weight: bold;
   letter-spacing: -0.0225rem;
   color: #203A4C;
 }
 
 h3 {
-  font-family: var("Ibarra Real Nova", serif);
+  font-family: "Ibarra Real Nova", serif;
   font-size: 2rem;
   line-height: 2rem;
   font-weight: 400;
@@ -102,7 +102,7 @@ body {
   padding-block-start: 2rem;
 }
 
-.flex, .navbar, .navbar ul {
+.flex, .hero__btn, .navbar, .navbar ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -110,6 +110,7 @@ body {
 
 nav, header, main, .contact, footer {
   min-width: 19.4375rem;
+  max-width: 90rem;
 }
 
 .navbar ul {
@@ -134,9 +135,50 @@ nav, header, main, .contact, footer {
   .navbar .hamburger {
     display: none;
   }
+  .hero {
+    display: grid;
+    grid-template-rows: 4fr;
+    grid-template-columns: 3fr;
+  }
+  .hero__picture {
+    grid-row: 1/5;
+    grid-column: 1/4;
+  }
+  .hero__text {
+    width: 32.125rem;
+    background-color: white;
+    grid-row: 3/5;
+    grid-column: 1/3;
+  }
+  .hero__text h2 {
+    margin-block: 3rem 3.5rem !important;
+  }
 }
-@media (min-with: 90rem) {
+@media (min-width: 64rem) {
   body {
     padding-inline: 10.25rem;
   }
+  .hero__text {
+    max-width: 27.8125rem;
+  }
+}
+.hero {
+  margin-block: 2.5rem 6rem;
+}
+.hero__img {
+  width: 100%;
+}
+.hero__text h2 {
+  margin-block: 1.5rem 2rem;
+}
+.hero__btn {
+  background-color: #203A4C;
+  width: 12.5rem;
+}
+.hero__btn p {
+  color: white;
+  margin-inline: auto;
+}
+.hero__btn img {
+  margin: 1.125rem;
 }/*# sourceMappingURL=main.css.map */

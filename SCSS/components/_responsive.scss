@@ -1,9 +1,11 @@
 // @use "../abstracts/variables" as vars;
 // @use "../base/base" as base;
 
-// navigation
+
 
 @media (min-width:768px) {
+
+    // navigation
 
     body {
         padding-inline: 2.5rem;
@@ -20,14 +22,47 @@
             display: none;
         }
     }
+
+
+    // HERO 
+
+    .hero {
+        display: grid;
+        grid-template-rows: 4fr;
+        grid-template-columns: 3fr;
+
+        &__picture {
+            grid-row: 1/5;
+            grid-column: 1/4;
+        }
+
+        &__text {
+            width: 32.125rem;
+            background-color: white;
+            grid-row: 3/5;
+            grid-column: 1/3;
+
+            h2 {
+                margin-block: 3rem 3.5rem !important;
+
+            }
+        }
+
+    }
+
 }
 
 
-@media (min-with:90rem){
+@media (min-width:64rem) {
 
-body {
-    padding-inline: 10.25rem;
-}
+    body {
+        padding-inline: 10.25rem;
+    }
 
+    // HERO 
+
+    .hero__text {
+        max-width: 27.8125rem;
+    }
 
 }

@@ -1,0 +1,38 @@
+@use "../abstracts/variables" as vars;
+@use "../base/base" as base;
+
+
+.hero {
+
+    margin-block: 2.5rem 6rem;
+
+    &__img {
+        width: 100%;
+    }
+
+    &__text h2 {
+        margin-block: 1.5rem 2rem;
+    }
+
+    &__btn {
+
+        @extend .flex;
+        background-color:vars.$color-primary-dark-blue;
+        width: 12.5rem;
+
+        p {
+            color: white;
+            margin-inline: auto;
+        }
+        
+
+        img {
+            margin: 1.125rem;
+            
+        }
+    }
+
+
+
+
+}
