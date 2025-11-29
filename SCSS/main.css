@@ -90,6 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 ul {
@@ -100,6 +101,21 @@ body {
   min-height: 100vh;
   padding-inline: 2rem;
   padding-block-start: 2rem;
+  font-family: "Public Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  font-weight: 400;
+  color: #33323D;
+}
+
+nav,
+header,
+main,
+.contact,
+footer {
+  min-width: 19.4375rem;
+  max-width: 90rem;
+  margin-inline: auto;
 }
 
 .flex, .hero__btn, .navbar, .navbar ul {
@@ -108,9 +124,14 @@ body {
   align-items: center;
 }
 
-nav, header, main, .contact, footer {
-  min-width: 19.4375rem;
-  max-width: 90rem;
+.btn, .contact a {
+  color: inherit;
+  font-size: 0.75rem;
+  padding: 0.625rem 2rem;
+  letter-spacing: 0.125rem;
+  border: 1px solid #33323D;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .navbar ul {
@@ -153,6 +174,28 @@ nav, header, main, .contact, footer {
   .hero__text h2 {
     margin-block: 3rem 3.5rem !important;
   }
+  .about {
+    display: grid;
+    grid-template-columns: 1.25fr 1.75fr;
+    gap: 4.375rem;
+    place-items: center;
+  }
+  .about__text {
+    margin-block: 0 !important;
+  }
+  .contact {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 2rem;
+    text-align: left !important;
+  }
+  .contact .line {
+    height: 1px;
+    width: 100%;
+    min-width: 7.0625rem;
+    background-color: rgb(206, 204, 204);
+    margin-inline: auto;
+  }
 }
 @media (min-width: 64rem) {
   body {
@@ -160,6 +203,22 @@ nav, header, main, .contact, footer {
   }
   .hero__text {
     max-width: 27.8125rem;
+  }
+  .about {
+    display: grid;
+    grid-template-columns: 1.75fr 1.25fr;
+    gap: 7.8125rem;
+    margin-inline-end: 5.9375rem;
+  }
+  .about__img {
+    width: 100%;
+  }
+  .contact {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-block: 9.375rem !important;
+  }
+  .contact .line {
+    max-width: 33.375rem;
   }
 }
 .hero {
@@ -181,4 +240,26 @@ nav, header, main, .contact, footer {
 }
 .hero__btn img {
   margin: 1.125rem;
+}
+
+.about__text {
+  padding-block: 2rem 3.125rem;
+  margin-block-start: 2rem;
+  border-block: 1px solid rgb(206, 204, 204);
+}
+.about__text p {
+  opacity: 0.8;
+  margin-block: 1.75rem 2.25rem;
+}
+
+.contact {
+  display: grid;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-block: 7.1875rem 5rem;
+}
+.contact a {
+  margin-inline: auto;
 }/*# sourceMappingURL=main.css.map */

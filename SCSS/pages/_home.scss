@@ -2,6 +2,9 @@
 @use "../base/base" as base;
 
 
+// HERO 
+
+
 .hero {
 
     margin-block: 2.5rem 6rem;
@@ -27,12 +30,40 @@
         
 
         img {
-            margin: 1.125rem;
-            
+            margin: 1.125rem;   
         }
     }
+}
 
 
+// ABOUT 
 
+.about {
+    
+    &__text {
+        padding-block: 2rem 3.125rem;
+        margin-block-start: 2rem;
+        border-block: 1px solid rgb(206, 204, 204) ;
+       
+        p {
+            opacity: 0.8;
+            margin-block: 1.75rem 2.25rem;
+        }
+    }
+}
 
+// CONTACT
+
+.contact {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-block: 7.1875rem 5rem;
+
+    a{
+        @extend .btn;
+        margin-inline: auto;
+    }
 }

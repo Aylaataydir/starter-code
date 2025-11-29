@@ -1,8 +1,24 @@
+@use "../abstracts/variables" as vars;
 
 body {
     min-height: 100vh;
     padding-inline: 2rem;
     padding-block-start: 2rem;
+    font-family: vars.$font-family-public;
+    font-size: 1rem;
+    line-height: 1.875rem;
+    font-weight: 400;
+    color: vars.$color-primary-grayish-dark-blue;
+}
+
+nav,
+header,
+main,
+.contact,
+footer {
+    min-width: 19.4375rem;
+    max-width: 90rem;
+    margin-inline: auto;
 }
 
 
@@ -12,8 +28,13 @@ body {
     align-items: center;
 }
 
-nav, header, main, .contact, footer {
-    min-width: 19.4375rem;
-    max-width: 90rem;
-}
+.btn {
+    color: inherit;
+    font-size: .75rem;
+    padding: .625rem 2rem;
+    letter-spacing: .125rem;
+    border: 1px solid vars.$color-primary-grayish-dark-blue;
+    width: fit-content;
 
+    
+}

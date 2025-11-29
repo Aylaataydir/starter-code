@@ -1,5 +1,5 @@
-// @use "../abstracts/variables" as vars;
-// @use "../base/base" as base;
+@use "../abstracts/variables" as vars;
+@use "../base/base" as base;
 
 
 
@@ -50,6 +50,39 @@
 
     }
 
+    // ABOUT 
+
+    .about {
+        display: grid;
+        grid-template-columns: 1.25fr 1.75fr;
+        gap: 4.375rem;
+        place-items: center;
+
+        &__text {
+            margin-block: 0 !important;
+        }
+    }
+
+    // CONTACT 
+
+
+    .contact {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 2rem;
+        text-align: left !important;
+
+
+
+        .line {
+            height: 1px;
+            width: 100%;
+            min-width: 7.0625rem;
+            background-color: rgb(206, 204, 204);
+            margin-inline: auto;
+        }
+    }
+
 }
 
 
@@ -64,5 +97,33 @@
     .hero__text {
         max-width: 27.8125rem;
     }
+
+    //about
+
+    .about {
+        display: grid;
+        grid-template-columns: 1.75fr 1.25fr;
+        gap: 7.8125rem;
+        margin-inline-end: 5.9375rem;
+
+        &__img {
+            width: 100%;
+        }
+    }
+
+    //  CONTACT 
+
+    .contact {
+
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-block: 9.375rem !important;
+
+        .line {
+            max-width: 33.375rem;
+        }
+    }
+
+
+
 
 }
