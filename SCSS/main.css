@@ -251,6 +251,18 @@ footer a {
   .fylo {
     margin-block-start: 5rem;
   }
+  .container.bookmark,
+  .container.fylo {
+    grid-template-columns: 1.75fr 1.25fr;
+  }
+  .container.bookmark .container__picture,
+  .container.fylo .container__picture {
+    order: 2;
+  }
+  .container.bookmark .container__text,
+  .container.fylo .container__text {
+    order: 1;
+  }
 }
 @media (min-width: 64rem) {
   body {
@@ -286,6 +298,12 @@ footer a {
     margin-inline-end: 5.9375rem;
   }
   .bookmark {
+    margin-inline-start: 5.9375rem;
+  }
+  .insure {
+    margin-inline-end: 5.9375rem;
+  }
+  .fylo {
     margin-inline-start: 5.9375rem;
   }
 }
