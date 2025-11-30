@@ -25,7 +25,8 @@ footer {
     }
 
     img {
-        background-color: white;
+        cursor: pointer;
+        filter: brightness(0) invert(1);
     }
 
     a {

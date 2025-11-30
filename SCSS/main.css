@@ -111,6 +111,7 @@ nav,
 header,
 main,
 article,
+.hero-img,
 section {
   min-width: 19.4375rem;
   max-width: 69.375rem;
@@ -140,6 +141,75 @@ section {
   width: fit-content;
 }
 
+.container__text {
+  padding-block: 2rem 3.125rem;
+  margin-block-start: 2rem;
+  border-block: 1px solid rgb(206, 204, 204);
+}
+.container__sub {
+  opacity: 0.8;
+  margin-block: 1.75rem 2.25rem;
+}
+
+.card {
+  margin-block: 2.5rem 3rem;
+  padding-block: 1.5625rem;
+  border-block: 1px solid rgb(206, 204, 204);
+}
+.card__sub {
+  margin-block: 1.5rem;
+  opacity: 0.7;
+}
+.card__info p {
+  font-size: 0.8125rem;
+  font-weight: bold;
+  color: #5FB4A2;
+}
+.card__info .btn, .card__info .contact a, .contact .card__info a {
+  margin-block-start: 1.5rem;
+}
+
+.background {
+  margin-block: 3rem 2.5rem;
+}
+.background__sub {
+  margin-block-start: 1.75rem;
+  opacity: 0.7;
+}
+
+.previews {
+  margin-block-end: 4rem;
+}
+.previews__img1 {
+  margin-block: 2.5rem 2rem;
+}
+
+.project__nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-block-end: 4rem;
+  border-block: 1px solid rgb(206, 204, 204);
+}
+.project__nav img {
+  margin-block-end: 1rem;
+  cursor: pointer;
+}
+.project__nav p {
+  opacity: 0.5;
+}
+.project__nav .nav-div {
+  padding-block: 1.5rem;
+}
+.project__nav .nav-div.right {
+  border-inline-start: 1px solid rgb(206, 204, 204);
+}
+.project__nav .nav-div.right img,
+.project__nav .nav-div.right h3,
+.project__nav .nav-div.right p {
+  margin-left: auto;
+  text-align: right;
+}
+
 footer {
   background-color: #33323D;
   width: 100%;
@@ -156,7 +226,8 @@ footer .social-icons {
   gap: 1rem;
 }
 footer img {
-  background-color: white;
+  cursor: pointer;
+  filter: brightness(0) invert(1);
 }
 footer a {
   color: white;
@@ -341,14 +412,8 @@ footer a {
   margin: 1.125rem;
 }
 
-.container__text {
-  padding-block: 2rem 3.125rem;
-  margin-block-start: 2rem;
-  border-block: 1px solid rgb(206, 204, 204);
-}
-.container__sub {
-  opacity: 0.8;
-  margin-block: 1.75rem 2.25rem;
+.about {
+  margin-block-end: 7.1875rem;
 }
 
 .contact {
@@ -357,7 +422,7 @@ footer a {
   text-align: center;
   justify-content: center;
   gap: 1.5rem;
-  margin-block: 7.1875rem 5rem;
+  margin-block-end: 5rem;
 }
 .contact a {
   margin-inline: auto;

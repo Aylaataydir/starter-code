@@ -36,21 +36,13 @@
 }
 
 
-// ABOUT 
+// ABOUT (.container)
 
-.container {
-
-    &__text {
-        padding-block: 2rem 3.125rem;
-        margin-block-start: 2rem;
-        border-block: 1px solid rgb(206, 204, 204);
-    }
-
-    &__sub {
-        opacity: 0.8;
-        margin-block: 1.75rem 2.25rem;
-    }
+.about {
+    margin-block-end: 7.1875rem;
 }
+
+
 
 // CONTACT
 
@@ -60,7 +52,7 @@
     text-align: center;
     justify-content: center;
     gap: 1.5rem;
-    margin-block: 7.1875rem 5rem;
+    margin-block-end:5rem;
 
     a {
         @extend .btn;

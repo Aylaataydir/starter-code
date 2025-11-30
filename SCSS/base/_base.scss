@@ -14,7 +14,8 @@ nav,
 header,
 main,
 article,
-section{
+.hero-img,
+section {
     min-width: 19.4375rem;
     max-width: 69.375rem;
     padding-inline: 32px;
@@ -42,4 +43,95 @@ section{
     letter-spacing: .125rem;
     border: 1px solid vars.$color-primary-grayish-dark-blue;
     width: fit-content;
+}
+
+// CONTAINER (home about, portfolio )
+
+.container {
+
+    &__text {
+        padding-block: 2rem 3.125rem;
+        margin-block-start: 2rem;
+        border-block: 1px solid rgb(206, 204, 204);
+    }
+
+    &__sub {
+        opacity: 0.8;
+        margin-block: 1.75rem 2.25rem;
+    }
+}
+
+// CARD (manage, bookmarkt, insure, fylo)
+
+.card {
+    margin-block: 2.5rem 3rem;
+    padding-block: 1.5625rem;
+    border-block: 1px solid rgb(206, 204, 204);
+
+    &__sub {
+        margin-block: 1.5rem;
+        opacity: 0.7;
+    }
+
+    &__info {
+
+        p {
+            font-size: .8125rem;
+            font-weight: bold;
+            color: vars.$color-primary-cyan;
+        }
+
+        .btn {
+            margin-block-start: 1.5rem;
+        }
+    }
+}
+
+.background {
+    margin-block: 3rem 2.5rem;
+
+    &__sub {
+        margin-block-start: 1.75rem;
+        opacity: 0.7;
+    }
+}
+
+.previews {
+    margin-block-end: 4rem;
+
+    &__img1 {
+        margin-block: 2.5rem 2rem;
+    }
+}
+
+.project__nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-block-end: 4rem;
+    border-block: 1px solid rgb(206, 204, 204);
+
+    img {
+        margin-block-end: 1rem;
+        cursor: pointer;
+    }
+
+    p {
+        opacity: 0.5;
+    }
+
+    .nav-div {
+        padding-block: 1.5rem;
+    }
+
+    .nav-div.right {
+
+        border-inline-start: 1px solid rgb(206, 204, 204);
+
+        img,
+        h3,
+        p {
+            margin-left: auto;
+            text-align: right;
+        }
+    }
 }
