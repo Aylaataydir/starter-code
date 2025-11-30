@@ -99,7 +99,6 @@ ul {
 
 body {
   min-height: 100vh;
-  padding-inline: 2rem;
   padding-block-start: 2rem;
   font-family: "Public Sans", sans-serif;
   font-size: 1rem;
@@ -112,11 +111,11 @@ nav,
 header,
 main,
 article,
-section,
-footer {
+section {
   min-width: 19.4375rem;
-  max-width: 90rem;
-  margin-inline: auto;
+  max-width: 69.375rem;
+  padding-inline: 32px;
+  margin-inline: auto !important;
 }
 
 .flex, .hero__btn, .navbar, .navbar ul, footer .social-icons {
@@ -142,8 +141,8 @@ footer {
 }
 
 footer {
-  margin-inline: -2rem;
   background-color: #33323D;
+  width: 100%;
   padding: 3.5rem 8.4375rem;
   gap: 2.5rem;
 }
@@ -178,8 +177,15 @@ footer a {
 }
 
 @media (min-width: 48rem) {
-  body {
+  nav,
+  header,
+  main,
+  article,
+  section,
+  footer {
     padding-inline: 2.5rem;
+  }
+  body {
     padding-block-start: 4rem;
   }
   .navbar {
@@ -236,7 +242,6 @@ footer a {
     gap: 10rem;
     justify-content: space-between;
     padding: 3.5rem 5.9375rem !important;
-    margin-inline: -2.5rem;
   }
   footer .footer-nav {
     flex-direction: row;
@@ -265,17 +270,24 @@ footer a {
   }
 }
 @media (min-width: 64rem) {
-  body {
+  nav,
+  header,
+  main,
+  article,
+  section,
+  footer {
     padding-inline: 10.25rem;
   }
   .hero__text {
     max-width: 27.8125rem;
   }
+  .about {
+    margin-inline-end: 5.9375rem;
+  }
   .container {
     display: grid;
     grid-template-columns: 1.75fr 1.25fr;
     gap: 7.8125rem;
-    margin-inline-end: 5.9375rem;
   }
   .container__img {
     width: 100%;
@@ -288,23 +300,24 @@ footer a {
     max-width: 33.375rem;
   }
   footer {
-    margin-inline: -10.3125rem;
+    max-width: 69.375rem;
+    margin-inline: auto;
   }
   footer .footer-nav {
     flex-direction: row;
     justify-content: start !important;
   }
   .manage {
-    margin-inline-end: 5.9375rem;
+    margin-inline-end: 5.9375rem !important;
   }
   .bookmark {
-    margin-inline-start: 5.9375rem;
+    margin-inline-start: 5.9375rem !important;
   }
   .insure {
-    margin-inline-end: 5.9375rem;
+    margin-inline-end: 5.9375rem !important;
   }
   .fylo {
-    margin-inline-start: 5.9375rem;
+    margin-inline-start: 5.9375rem !important;
   }
 }
 .hero {

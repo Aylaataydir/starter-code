@@ -2,7 +2,6 @@
 
 body {
     min-height: 100vh;
-    padding-inline: 2rem;
     padding-block-start: 2rem;
     font-family: vars.$font-family-public;
     font-size: 1rem;
@@ -15,11 +14,12 @@ nav,
 header,
 main,
 article,
-section,
-footer {
+section{
     min-width: 19.4375rem;
-    max-width: 90rem;
-    margin-inline: auto;
+    max-width: 69.375rem;
+    padding-inline: 32px;
+    margin-inline: auto !important;
+
 }
 
 

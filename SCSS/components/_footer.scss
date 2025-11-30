@@ -4,8 +4,8 @@
 
 footer {
     @extend .flex-column;
-    margin-inline: -2rem;
     background-color: vars.$color-primary-grayish-dark-blue;
+    width: 100%;
     padding: 3.5rem 8.4375rem;
     gap: 2.5rem;
 

@@ -5,10 +5,18 @@
 
 @media (min-width:48rem) {
 
+    nav,
+    header,
+    main,
+    article,
+    section,
+    footer {
+        padding-inline: 2.5rem;
+    }
+
     // navigation
 
     body {
-        padding-inline: 2.5rem;
         padding-block-start: 4rem;
     }
 
@@ -91,7 +99,6 @@
         gap: 10rem;
         justify-content: space-between;
         padding: 3.5rem 5.9375rem !important;
-        margin-inline: -2.5rem;
 
 
         .footer-nav {
@@ -136,8 +143,14 @@
 
 @media (min-width:64rem) {
 
-    body {
+    nav,
+    header,
+    main,
+    article,
+    section,
+    footer {
         padding-inline: 10.25rem;
+
     }
 
     // HERO 
@@ -148,11 +161,14 @@
 
     //about
 
+    .about {
+        margin-inline-end: 5.9375rem;
+    }
+
     .container {
         display: grid;
         grid-template-columns: 1.75fr 1.25fr;
         gap: 7.8125rem;
-        margin-inline-end: 5.9375rem;
 
         &__img {
             width: 100%;
@@ -174,7 +190,8 @@
     // FOOTER 
 
     footer {
-        margin-inline: -10.3125rem;
+      max-width: 69.375rem;
+      margin-inline: auto;
 
         .footer-nav {
             flex-direction: row;
@@ -185,19 +202,19 @@
     // PORTFOLIO
 
     .manage {
-        margin-inline-end: 5.9375rem;
+        margin-inline-end: 5.9375rem !important;
     }
 
     .bookmark {
-        margin-inline-start: 5.9375rem;
+        margin-inline-start: 5.9375rem !important;
     }
 
     .insure {
-        margin-inline-end: 5.9375rem;
+        margin-inline-end: 5.9375rem !important;
     }
 
     .fylo {
-        margin-inline-start: 5.9375rem;
+        margin-inline-start: 5.9375rem !important;
     }
 
 }
