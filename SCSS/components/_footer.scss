@@ -1,0 +1,35 @@
+@use "../abstracts/variables" as vars;
+@use "../base/base" as base;
+
+
+footer {
+    @extend .flex-column;
+    margin-inline: -2rem;
+    background-color: vars.$color-primary-grayish-dark-blue;
+    padding: 3.5rem 8.4375rem;
+    gap: 2.5rem;
+
+    .footer-nav {
+        @extend .flex-column;
+        gap: 2.5rem;
+
+        ul {
+            @extend .flex-column;
+            gap: 2.875rem;
+        }
+    }
+
+    .social-icons {
+        @extend .flex;
+        gap: 1rem;
+    }
+
+    img {
+        background-color: white;
+    }
+
+    a {
+        color: white;
+    }
+
+}

@@ -6,6 +6,7 @@
 
 .navbar {
     @extend .flex;
+    margin-block-end: 2.5rem;
 
     ul {
         @extend .flex;

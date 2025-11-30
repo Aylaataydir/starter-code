@@ -3,7 +3,7 @@
 
 
 
-@media (min-width:768px) {
+@media (min-width:48rem) {
 
     // navigation
 
@@ -13,6 +13,8 @@
     }
 
     .navbar {
+
+        margin-block-end: 5.875rem;
 
         ul {
             display: flex;
@@ -47,12 +49,11 @@
 
             }
         }
-
     }
 
     // ABOUT 
 
-    .about {
+    .container {
         display: grid;
         grid-template-columns: 1.25fr 1.75fr;
         gap: 4.375rem;
@@ -83,6 +84,37 @@
         }
     }
 
+    // footer 
+
+    footer {
+        flex-direction: row;
+        gap: 10rem;
+        justify-content: space-between;
+        padding: 3.5rem 5.9375rem !important;
+        margin-inline: -2.5rem;
+
+
+        .footer-nav {
+            flex-direction: row;
+            justify-content: start;
+
+            ul {
+                flex-direction: row;
+                gap: 2.625rem;
+            }
+
+        }
+
+    }
+
+    // PORTFOLIO 
+
+    .bookmark,
+    .insure,
+    .fylo {
+        margin-block-start: (5rem);
+    }
+
 }
 
 
@@ -100,7 +132,7 @@
 
     //about
 
-    .about {
+    .container {
         display: grid;
         grid-template-columns: 1.75fr 1.25fr;
         gap: 7.8125rem;
@@ -123,7 +155,27 @@
         }
     }
 
+    // FOOTER 
 
+    footer {
+        margin-inline: -10.3125rem;
 
+        .footer-nav {
+            flex-direction: row;
+            justify-content: start !important;
+        }
+    }
+
+    // PORTFOLIO
+
+    .manage {
+        margin-inline-end: 5.9375rem;
+    }
+
+    .bookmark {
+        margin-inline-start: 5.9375rem;
+    }
+
+    .
 
 }

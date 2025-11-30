@@ -1,54 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="SCSS/main.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | My Projects</title>
+
+  <title>My Projects</title>
 </head>
+
 <body>
 
-  Home
-  Portfolio
-  Contact Me
+  <!-- NAVBAR  -->
 
-  Manage
+  <nav class="navbar">
+    <img src="images/icons/logo.svg" alt="">
+    <ul>
+      <li class="p-2"><a href="home">HOME</a></li>
+      <li class="p-2"><a href="portfolio">PORTFOLIO</a></li>
+      <li class="p-2"><a href="contact">CONTACT ME</a></li>
+    </ul>
+    <img class="hamburger" src="images/icons/hamburger.svg" alt="">
+  </nav>
 
-  This project required me to build a fully responsive landing page to the designs provided. 
-  I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, 
-  such as the testimonial slider.
+  <!-- MANAGE  -->
 
-  View Project
+  <article class="container manage">
+    <picture class="container__picture">
+      <source media="(min-width: 64rem)" srcset="images/portfolio/desktop/image-portfolio-manage@2x.jpg">
+      <source media="(min-width: 48rem)" srcset="images/portfolio/tablet/image-portfolio-manage@2x.jpg">
+      <img class="container__img" src="images/portfolio/mobile/image-portfolio-manage@2x.jpg" alt="">
+    </picture>
+    <div class="container__text">
+      <h2 class="container__title">Manage</h2>
+      <p class="container__sub"> This project required me to build a fully responsive landing page to the designs
+        provided.
+        I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity,
+        such as the testimonial slider.</p>
+      <a class="btn" href="">VIEW PROJECT</a>
+    </div>
+  </article>
 
-  Bookmark
+  <!-- BOOKMARK  -->
 
-  This project required me to build a fully responsive landing page to the designs provided. I 
-  used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such 
-  as the features section.
+  <article class="container bookmark">
+    <picture class="container__picture">
+      <source media="(min-width: 64rem)" srcset="images/portfolio/desktop/image-portfolio-bookmark@2x.jpg">
+      <source media="(min-width: 48rem)" srcset="images/portfolio/tablet/image-portfolio-bookmark@2x.jpg">
+      <img class="container__img" src="images/portfolio/mobile/image-portfolio-bookmark@2x.jpg" alt="">
+    </picture>
+    <div class="container__text">
+      <h2 class="container__title">Bookmark</h2>
+      <p class="container__sub"> This project required me to build a fully responsive landing page to the designs
+        provided. I
+        used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such
+        as the features section.</p>
+      <a class="btn" href="">VIEW PROJECT</a>
+    </div>
+  </article>
 
-  View Project
+  <!-- INSURE  -->
 
-  Insure
+  <article class="container insure">
+    <picture class="container__picture">
+      <source media="(min-width: 64rem)" srcset="images/portfolio/desktop/image-portfolio-insure@2x.jpg">
+      <source media="(min-width: 48rem)" srcset="images/portfolio/tablet/image-portfolio-insure@2x.jpg">
+      <img class="container__img" src="images/portfolio/mobile/image-portfolio-insure@2x.jpg" alt="">
+    </picture>
+    <div class="container__text">
+      <h2 class="container__title">Insure</h2>
+      <p class="container__sub"> This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive landing page. The only JavaScript this project required was to enable the toggling of the mobile navigation.</p>
+      <a class="btn" href="">VIEW PROJECT</a>
+    </div>
+  </article>
 
-  This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive 
-  landing page. The only JavaScript this project required was to enable the toggling of the 
-  mobile navigation.
+  <!-- FYLO  -->
 
-  View Project
+  <article class="container fylo">
+    <picture class="container__picture">
+      <source media="(min-width: 64rem)" srcset="images/portfolio/desktop/image-portfolio-fylo@2x.jpg">
+      <source media="(min-width: 48rem)" srcset="images/portfolio/tablet/image-portfolio-fylo@2x.jpg">
+      <img class="container__img" src="images/portfolio/mobile/image-portfolio-fylo@2x.jpg" alt="">
+    </picture>
+    <div class="container__text">
+      <h2 class="container__title">Fylo</h2>
+      <p class="container__sub">This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and
+  built it so that it was fully-responsive. I took a mobile-first approach and used modern
+  CSS like Flexbox and Grid for layout purposes.</p>
+      <a class="btn" href="">VIEW PROJECT</a>
+    </div>
+  </article>
 
-  Fylo
+  <!-- CONTACT  -->
 
-  This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and 
-  built it so that it was fully-responsive. I took a mobile-first approach and used modern 
-  CSS like Flexbox and Grid for layout purposes.
+  <section class="contact">
+    <h2>Interested in doing a project together?</h2>
+    <div class="line"></div>
+    <a href="">CONTACT ME</a>
+  </section>
 
-  View Project
+  <!-- FOOTER  -->
 
-  Interested in doing a project together?
+  <footer>
+    <div class="footer-nav">
+      <img src="images/icons/logo.svg" alt="">
+      <ul>
+        <li class="p-2"><a href="home">HOME</a></li>
+        <li class="p-2"><a href="portfolio">PORTFOLIO</a></li>
+        <li class="p-2"><a href="contact">CONTACT ME</a></li>
+      </ul>
+    </div>
+    <div class="social-icons">
+      <img src="images/icons/github.svg" alt="">
+      <img src="images/icons/twitter.svg" alt="">
+      <img src="images/icons/linkedin.svg" alt="">
+    </div>
+  </footer>
 
-  Contact Me
 
 </body>
+
 </html>
