@@ -327,6 +327,9 @@ footer a {
   .fylo {
     margin-block-start: 5rem;
   }
+  .fylo {
+    margin-block-end: 6rem;
+  }
   .container.bookmark,
   .container.fylo {
     grid-template-columns: 1.75fr 1.25fr;
@@ -365,7 +368,8 @@ footer a {
   }
   .contact {
     grid-template-columns: 1fr 1fr 1fr;
-    margin-block: 9.375rem !important;
+    margin-block-end: 9.375rem !important;
+    padding: -10.25rem;
   }
   .contact .line {
     max-width: 33.375rem;
@@ -389,6 +393,7 @@ footer a {
   }
   .fylo {
     margin-inline-start: 5.9375rem !important;
+    margin-block-end: 9.375rem !important;
   }
 }
 .hero {
@@ -430,4 +435,8 @@ footer a {
 
 .bookmark, .insure, .fylo {
   margin-block-start: 4.5rem;
+}
+
+.fylo {
+  margin-block-end: 5rem;
 }/*# sourceMappingURL=main.css.map */

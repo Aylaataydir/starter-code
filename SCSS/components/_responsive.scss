@@ -119,6 +119,10 @@
         margin-block-start: (5rem);
     }
 
+    .fylo {
+        margin-block-end: 6rem;
+    }
+
     .container.bookmark,
     .container.fylo {
         grid-template-columns: 1.75fr 1.25fr;
@@ -175,7 +179,9 @@
     .contact {
 
         grid-template-columns: 1fr 1fr 1fr;
-        margin-block: 9.375rem !important;
+        margin-block-end: 9.375rem !important;
+        padding: -10.25rem ;
+         
 
         .line {
             max-width: 33.375rem;
@@ -185,8 +191,8 @@
     // FOOTER 
 
     footer {
-      max-width: 69.375rem;
-      margin-inline: auto;
+        max-width: 69.375rem;
+        margin-inline: auto;
 
         .footer-nav {
             flex-direction: row;
@@ -210,5 +216,6 @@
 
     .fylo {
         margin-inline-start: 5.9375rem !important;
+        margin-block-end: 9.375rem !important;
     }
 }
