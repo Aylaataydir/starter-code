@@ -9,6 +9,7 @@
     header,
     main,
     article,
+    .hero-img,
     section,
     footer {
         padding-inline: 2.5rem;
@@ -135,6 +136,66 @@
             order: 1;
         }
     }
+
+    // CARD 
+
+
+    .card {
+        display: grid;
+        margin-block: 2.5rem;
+        padding-block: 2rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "card__title card__sub"
+            "card__info card__sub"
+            "btn car__sub";
+
+        &__title {
+            grid-area: card__title;
+        }
+
+        &__sub {
+            grid-area: card__sub;
+        }
+
+        &__info {
+            grid-area: card__info;
+        }
+
+        .btn {
+            grid-area: btn;
+        }
+    }
+
+    .previews {
+        margin-block-end: 5rem;
+    }
+
+    .project__nav {
+        margin-block-end: 5rem;
+
+        .nav-div {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            img {
+                height: fit-content;
+            }
+        }
+
+
+        .nav-div.right {
+            flex-direction: row-reverse;
+
+            img {
+                margin-left: 0 !important;
+            }
+        }
+
+    }
+
+
 }
 
 
@@ -146,6 +207,7 @@
     header,
     main,
     article,
+    .hero-img,
     section,
     footer {
         padding-inline: 10.25rem;
@@ -180,8 +242,8 @@
 
         grid-template-columns: 1fr 1fr 1fr;
         margin-block-end: 9.375rem !important;
-        padding: -10.25rem ;
-         
+        padding: -10.25rem;
+
 
         .line {
             max-width: 33.375rem;
@@ -217,5 +279,36 @@
     .fylo {
         margin-inline-start: 5.9375rem !important;
         margin-block-end: 9.375rem !important;
+    }
+
+
+    // CARD 
+
+    .project__content {
+        display: grid;
+        margin-block-start: 7.1875rem;
+        grid-template-columns: 1.2fr 1.80fr;
+        column-gap: 7.8125rem;
+        align-items: start;
+        grid-template-areas:
+            "card back"
+            "card previews";
+
+        .card {
+            grid-area: card;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .backgorund {
+            grid-area: back;
+        }
+
+        .previews {
+            grid-area: previews;
+            margin-block-end: 4rem;
+        }
+
     }
 }

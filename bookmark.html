@@ -1,51 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Bookmark Project</title>
+  <link rel="stylesheet" href="SCSS/main.css">
+  <title>Bookmark Project</title>
 </head>
+
 <body>
 
-  Home
-  Portfolio
-  Contact Me
 
-  Bookmark
+  <!-- NAVBAR  -->
 
-  This project required me to build a fully responsive landing page to the designs 
-  provided. I used HTML5, along with CSS Grid and JavaScript for the areas that 
-  required interactivity, such as the features section.
+  <nav class="navbar">
+    <img src="images/icons/logo.svg" alt="">
+    <ul>
+      <li class="p-2"><a href="home">HOME</a></li>
+      <li class="p-2"><a href="portfolio">PORTFOLIO</a></li>
+      <li class="p-2"><a href="contact">CONTACT ME</a></li>
+    </ul>
+    <img class="hamburger" src="images/icons/hamburger.svg" alt="">
+  </nav>
 
-  Interaction Design / Front End Development
 
-  HTML / CSS / JS
+  <!-- HERO PICTURE  -->
 
-  Visit Website
+  <picture class="hero-img ">
+    <source media="(min-width: 64rem)" srcset="images/detail/desktop/image-manage-hero@2x.jpg">
+    <source media="(min-width: 48rem)" srcset="images/detail/tablet/image-manage-hero@2x.jpg">
+    <img src="images/detail/mobile/image-manage-hero@2x.jpg" alt="">
+  </picture>
 
-  Project Background
+  <!-- CARD  -->
 
-  This project was a front-end  challenge from Frontend Mentor. It’s a platform that 
-  enables you to practice building websites to a design and project brief. Each challenge 
-  includes mobile and desktop designs to show how the website should look at different 
-  screen sizes. Creating these projects has helped me refine my workflow and solve 
-  real-world coding problems. I’ve learned something new with each project, helping 
-  me to improve and adapt my style.
+  <section class="project__content">
+    <div class="card p__manage ">
+      <h2 class="card__title">Bookmark</h2>
+      <p class="card__sub">This project required me to build a fully responsive landing page to the designs
+        provided. I used HTML5, along with CSS Grid and JavaScript for the areas that
+        required interactivity, such as the features section..</p>
+      <div class="card__info">
+        <p>Interaction Design / Front End Development</p>
+        <p>HTML / CSS / JS</p>
+        <a class="btn" href="">VISIT WEBSITE</a>
+      </div>
+    </div>
 
-  Static Previews
+    <!-- BACKGROUND  -->
 
-  Manage
-  Previous Project
+    <div class="background">
+      <h3 class="background__title">Project Background</h3>
+      <p class="background__sub">This project was a front-end challenge from Frontend Mentor. It’s a platform that
+        enables you to practice building websites to a design and project brief. Each challenge
+        includes mobile and desktop designs to show how the website should look at different
+        screen sizes. Creating these projects has helped me refine my workflow and solve
+        real-world coding problems. I’ve learned something new with each project, helping
+        me to improve and adapt my style.</p>
+    </div>
 
-  Insure
-  Next Project
+    <div class="previews">
+      <h3 class="previews__title">Static Previews</h3>
+      <picture class="previews__img1">
+        <source media="(min-width: 64rem)" srcset="images/detail/desktop/image-manage-preview-1@2x.jpg">
+        <source media="(min-width: 48rem)" srcset="images/detail/tablet/image-manage-preview-1@2x.jpg">
+        <img src="images/detail/mobile/image-manage-preview-1@2x.jpg" alt="">
+      </picture>
+      <picture>
+        <source media="(min-width: 64rem)" srcset="images/detail/desktop/image-manage-preview-2@2x.jpg">
+        <source media="(min-width: 48rem)" srcset="images/detail/tablet/image-manage-preview-2@2x.jpg">
+        <img src="images/detail/mobile/image-manage-preview-2@2x.jpg" alt="">
+      </picture>
+    </div>
+  </section>
 
-  Interested in doing a project together?
+  <section class="project__nav">
+    <div class="nav-div left">
+      <img src="images/icons/arrow-left.svg" alt="">
+      <div class="nav-text">
+        <h3 class="nav-name">Manage</h3>
+        <p class="nav-direction">Previous Project</p>
+      </div>
+    </div>
+    <div class="nav-div right">
+      <img src="images/icons/arrow-right.svg" alt="">
+      <div class="nav-text">
+        <h3 class="nav-name">Insure</h3>
+        <p class="nav-direction">Next Project</p>
+      </div>
+    </div>
+  </section>
 
-  Contact Me
+
+  <!-- CONTACT  -->
+
+  <section class="contact">
+    <h2>Interested in doing a project together?</h2>
+    <div class="line"></div>
+    <a href="">CONTACT ME</a>
+  </section>
+
+
+  <!-- FOOTER  -->
+
+  <footer>
+    <div class="footer-nav">
+      <img src="images/icons/logo.svg" alt="">
+      <ul>
+        <li class="p-2"><a href="home">HOME</a></li>
+        <li class="p-2"><a href="portfolio">PORTFOLIO</a></li>
+        <li class="p-2"><a href="contact">CONTACT ME</a></li>
+      </ul>
+    </div>
+    <div class="social-icons">
+      <img src="images/icons/github.svg" alt="">
+      <img src="images/icons/twitter.svg" alt="">
+      <img src="images/icons/linkedin.svg" alt="">
+    </div>
+  </footer>
+
+
 
 </body>
+
 </html>

@@ -101,7 +101,7 @@ body {
   min-height: 100vh;
   padding-block-start: 2rem;
   font-family: "Public Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 15px;
   line-height: 1.875rem;
   font-weight: 400;
   color: #33323D;
@@ -114,7 +114,7 @@ article,
 .hero-img,
 section {
   min-width: 19.4375rem;
-  max-width: 69.375rem;
+  max-width: 90rem;
   padding-inline: 32px;
   margin-inline: auto !important;
 }
@@ -188,7 +188,6 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-block-end: 4rem;
-  border-block: 1px solid rgb(206, 204, 204);
 }
 .project__nav img {
   margin-block-end: 1rem;
@@ -199,6 +198,7 @@ section {
 }
 .project__nav .nav-div {
   padding-block: 1.5rem;
+  border-block: 1px solid rgb(206, 204, 204);
 }
 .project__nav .nav-div.right {
   border-inline-start: 1px solid rgb(206, 204, 204);
@@ -252,6 +252,7 @@ footer a {
   header,
   main,
   article,
+  .hero-img,
   section,
   footer {
     padding-inline: 2.5rem;
@@ -342,12 +343,53 @@ footer a {
   .container.fylo .container__text {
     order: 1;
   }
+  .card {
+    display: grid;
+    margin-block: 2.5rem;
+    padding-block: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "card__title card__sub" "card__info card__sub" "btn car__sub";
+  }
+  .card__title {
+    grid-area: card__title;
+  }
+  .card__sub {
+    grid-area: card__sub;
+  }
+  .card__info {
+    grid-area: card__info;
+  }
+  .card .btn {
+    grid-area: btn;
+  }
+  .previews {
+    margin-block-end: 5rem;
+  }
+  .project__nav {
+    margin-block-end: 5rem;
+  }
+  .project__nav .nav-div {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .project__nav .nav-div img {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .project__nav .nav-div.right {
+    flex-direction: row-reverse;
+  }
+  .project__nav .nav-div.right img {
+    margin-left: 0 !important;
+  }
 }
 @media (min-width: 64rem) {
   nav,
   header,
   main,
   article,
+  .hero-img,
   section,
   footer {
     padding-inline: 10.25rem;
@@ -394,6 +436,27 @@ footer a {
   .fylo {
     margin-inline-start: 5.9375rem !important;
     margin-block-end: 9.375rem !important;
+  }
+  .project__content {
+    display: grid;
+    margin-block-start: 7.1875rem;
+    grid-template-columns: 1.2fr 1.8fr;
+    -moz-column-gap: 7.8125rem;
+         column-gap: 7.8125rem;
+    align-items: start;
+    grid-template-areas: "card back" "card previews";
+  }
+  .project__content .card {
+    grid-area: card;
+    display: flex;
+    flex-direction: column;
+  }
+  .project__content .backgorund {
+    grid-area: back;
+  }
+  .project__content .previews {
+    grid-area: previews;
+    margin-block-end: 4rem;
   }
 }
 .hero {

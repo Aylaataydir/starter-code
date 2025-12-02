@@ -4,7 +4,7 @@ body {
     min-height: 100vh;
     padding-block-start: 2rem;
     font-family: vars.$font-family-public;
-    font-size: 1rem;
+    font-size: 15px;
     line-height: 1.875rem;
     font-weight: 400;
     color: vars.$color-primary-grayish-dark-blue;
@@ -17,7 +17,7 @@ article,
 .hero-img,
 section {
     min-width: 19.4375rem;
-    max-width: 69.375rem;
+    max-width: 90rem;
     padding-inline: 32px;
     margin-inline: auto !important;
 
@@ -108,7 +108,7 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-block-end: 4rem;
-    border-block: 1px solid rgb(206, 204, 204);
+   
 
     img {
         margin-block-end: 1rem;
@@ -121,6 +121,7 @@ section {
 
     .nav-div {
         padding-block: 1.5rem;
+         border-block: 1px solid rgb(206, 204, 204);
     }
 
     .nav-div.right {
