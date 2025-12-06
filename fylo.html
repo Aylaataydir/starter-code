@@ -3,49 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="SCSS/main.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo Project</title>
+  <title>Fylo Project</title>
+
 </head>
 <body>
 
-  Home
-  Portfolio
-  Contact Me
 
-  Fylo
+ <!-- NAVBAR  -->
 
-  This project was built in pure HTML and CSS. I had mobile and desktop designs to 
+  <nav class="navbar">
+    <img src="images/icons/logo.svg" alt="">
+    <ul>
+      <li class="p-2"><a href="home">HOME</a></li>
+      <li class="p-2"><a href="portfolio">PORTFOLIO</a></li>
+      <li class="p-2"><a href="contact">CONTACT ME</a></li>
+    </ul>
+    <img class="hamburger" src="images/icons/hamburger.svg" alt="">
+  </nav>
+
+
+  <!-- HERO PICTURE  -->
+
+  <picture class="hero-img ">
+    <source media="(min-width: 64rem)" srcset="images/detail/desktop/image-fylo-hero@2x.jpg">
+    <source media="(min-width: 48rem)" srcset="images/detail/tablet/image-fylo-hero@2x.jpg">
+    <img src="images/detail/mobile/image-fylo-hero@2x.jpg" alt="">
+  </picture>
+
+  <!-- CARD  -->
+
+  <section class="project__content">
+    <div class="card p__manage ">
+      <h2 class="card__title">Fylo</h2>
+      <p class="card__sub">This project was built in pure HTML and CSS. I had mobile and desktop designs to 
   work to and built it so that it was fully-responsive. I took a mobile-first approach 
-  and used modern CSS like Flexbox and Grid for layout purposes.
+  and used modern CSS like Flexbox and Grid for layout purposes.</p>
+      <div class="card__info">
+        <p>Interaction Design / Front End Development</p>
+        <p>HTML / CSS / JS</p>
+        <a class="btn" href="">VISIT WEBSITE</a>
+      </div>
+    </div>
 
-  Interaction Design / Front End Development
+    <!-- BACKGROUND  -->
 
-  HTML / CSS
-
-  Visit Website
-
-  Project Background
-
-  This project was a front-end  challenge from Frontend Mentor. It’s a platform that 
+    <div class="background">
+      <h3 class="background__title">Project Background</h3>
+      <p class="background__sub">This project was a front-end  challenge from Frontend Mentor. It’s a platform that 
   enables you to practice building websites to a design and project brief. Each challenge 
   includes mobile and desktop designs to show how the website should look at different 
   screen sizes. Creating these projects has helped me refine my workflow and solve 
   real-world coding problems. I’ve learned something new with each project, helping 
-  me to improve and adapt my style.
+  me to improve and adapt my style.</p>
+    </div>
 
-  Static Previews
+    <div class="previews">
+      <h3 class="previews__title">Static Previews</h3>
+      <picture class="previews__img1">
+        <source media="(min-width: 64rem)" srcset="images/detail/desktop/image-fylo-preview-1@2x.jpg">
+        <source media="(min-width: 48rem)" srcset="images/detail/tablet/image-fylo-preview-1@2x.jpg">
+        <img src="images/detail/mobile/image-fylo-preview-1@2x.jpg" alt="">
+      </picture>
+      <picture>
+        <source media="(min-width: 64rem)" srcset="images/detail/desktop/image-fylo-preview-2@2x.jpg">
+        <source media="(min-width: 48rem)" srcset="images/detail/tablet/image-fylo-preview-2@2x.jpg">
+        <img src="images/detail/mobile/image-fylo-preview-2@2x.jpg" alt="">
+      </picture>
+    </div>
+  </section>
 
-  Insure
-  Previous Project
+  <section class="project__nav">
+    <div class="nav-div left">
+      <img src="images/icons/arrow-left.svg" alt="">
+      <div class="nav-text">
+        <h3 class="nav-name">Insure</h3>
+        <p class="nav-direction">Previous Project</p>
+      </div>
+    </div>
+    <div class="nav-div right">
+      <img src="images/icons/arrow-right.svg" alt="">
+      <div class="nav-text">
+        <h3 class="nav-name">Manage</h3>
+        <p class="nav-direction">Next Project</p>
+      </div>
+    </div>
+  </section>
 
-  Manage
-  Next Project
 
-  Interested in doing a project together?
+  <!-- CONTACT  -->
 
-  Contact Me
+  <section class="contact">
+    <h2>Interested in doing a project together?</h2>
+    <div class="line"></div>
+    <a href="">CONTACT ME</a>
+  </section>
+
+
+  <!-- FOOTER  -->
+
+  <footer>
+    <div class="footer-nav">
+      <img src="images/icons/logo.svg" alt="">
+      <ul>
+        <li class="p-2"><a href="home">HOME</a></li>
+        <li class="p-2"><a href="portfolio">PORTFOLIO</a></li>
+        <li class="p-2"><a href="contact">CONTACT ME</a></li>
+      </ul>
+    </div>
+    <div class="social-icons">
+      <img src="images/icons/github.svg" alt="">
+      <img src="images/icons/twitter.svg" alt="">
+      <img src="images/icons/linkedin.svg" alt="">
+    </div>
+  </footer>
+
 
 </body>
 </html>

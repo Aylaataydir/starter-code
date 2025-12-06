@@ -1,40 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="SCSS/main.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Contact Me</title>
+  <title>Contact Me</title>
 </head>
+
 <body>
 
-  Home
-  Portfolio
-  Contact Me
+  <!-- NAVBAR  -->
 
-  Get in Touch
+  <nav class="navbar">
+    <img src="images/icons/logo.svg" alt="">
+    <ul>
+      <li class="p-2"><a href="home">HOME</a></li>
+      <li class="p-2"><a href="portfolio">PORTFOLIO</a></li>
+      <li class="p-2"><a href="contact">CONTACT ME</a></li>
+    </ul>
+    <img class="hamburger" src="images/icons/hamburger.svg" alt="">
+  </nav>
 
-  I’d love to hear about what you’re working on and how I could help. I’m currently 
-  looking for a new role and am open to a wide range of opportunities. My preference 
-  would be to find a position in a company in London. But I’m also happy to hear about 
-  opportunites that don’t fit that description. I’m a hard-working and positive person 
-  who will always approach each task with a sense of purpose and attention to detail. 
-  Please do feel free to check out my online profiles below and get in touch using the form.
+  <main class="contact__page">
+    <div class="contact__page__text">
+      <h2>Get in Touch</h2>
+      <div class="contact__page_sub">
+        <p> I’d love to hear about what you’re working on and how I could help. I’m currently
+          looking for a new role and am open to a wide range of opportunities. My preference
+          would be to find a position in a company in London. But I’m also happy to hear about
+          opportunites that don’t fit that description. I’m a hard-working and positive person
+          who will always approach each task with a sense of purpose and attention to detail.
+          Please do feel free to check out my online profiles below and get in touch using the form.</p>
+        <div class="social-icons">
+          <img src="images/icons/github.svg" alt="">
+          <img src="images/icons/twitter.svg" alt="">
+          <img src="images/icons/linkedin.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="contact__me">
+      <h2>Contact Me</h2>
+      <div class="contact__me__form">
+        <div>
+          <label for="name">Name</label>
+          <input name="Name" type="text" id="name" placeholder="Jane Appleseed">
+        </div>
+        <div>
+          <label for="email">Email Address</label>
+          <input type="text" id="email" name="Email" placeholder="email@example.com">
+        </div>
+        <div>
+          <label for="message" >Message</label>
+          <textarea name="Message" id="message" placeholder="How can I help?"></textarea>
+        </div>
+        <input type="submit" name="Submit" id="" value="SEND MESSAGE" class="btn">
+      </div>
+    </div>
+  </main>
 
-  Contact Me
 
-  Name
-  Jane Appleseed
+  <!-- FOOTER  -->
 
-  Email Address
-  email@example.com
-
-  Message
-  How can I help?
-
-  Send Message
+  <footer>
+    <div class="footer-nav">
+      <img src="images/icons/logo.svg" alt="">
+      <ul>
+        <li class="p-2"><a href="home">HOME</a></li>
+        <li class="p-2"><a href="portfolio">PORTFOLIO</a></li>
+        <li class="p-2"><a href="contact">CONTACT ME</a></li>
+      </ul>
+    </div>
+    <div class="social-icons">
+      <img src="images/icons/github.svg" alt="">
+      <img src="images/icons/twitter.svg" alt="">
+      <img src="images/icons/linkedin.svg" alt="">
+    </div>
+  </footer>
 
 </body>
+
 </html>

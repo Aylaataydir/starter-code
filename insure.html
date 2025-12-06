@@ -1,51 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="SCSS/main.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Insure Project</title>
+  <title>Insure Project</title>
 </head>
+
 <body>
 
-  Home
-  Portfolio
-  Contact Me
+  <!-- NAVBAR  -->
 
-  Insure
+  <nav class="navbar">
+    <img src="images/icons/logo.svg" alt="">
+    <ul>
+      <li class="p-2"><a href="home">HOME</a></li>
+      <li class="p-2"><a href="portfolio">PORTFOLIO</a></li>
+      <li class="p-2"><a href="contact">CONTACT ME</a></li>
+    </ul>
+    <img class="hamburger" src="images/icons/hamburger.svg" alt="">
+  </nav>
 
-  This was a small project which mostly consisted of HTML and CSS. I built a 
-  fully-responsive landing page. The only JavaScript this project required was 
-  to enable the toggling of the mobile navigation.
 
-  Interaction Design / Front End Development
+  <!-- HERO PICTURE  -->
 
-  HTML / CSS / JS
+  <picture class="hero-img ">
+    <source media="(min-width: 64rem)" srcset="images/detail/desktop/image-insure-hero@2x.jpg">
+    <source media="(min-width: 48rem)" srcset="images/detail/tablet/image-insure-hero@2x.jpg">
+    <img src="images/detail/mobile/image-insure-hero@2x.jpg" alt="">
+  </picture>
 
-  Visit Website
+  <!-- CARD  -->
 
-  Project Background
+  <section class="project__content">
+    <div class="card p__manage ">
+      <h2 class="card__title">Insure</h2>
+      <p class="card__sub">This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive
+        landing page. The only JavaScript this project required was to enable the toggling of the mobile navigation.</p>
+      <div class="card__info">
+        <p>Interaction Design / Front End Development</p>
+        <p>HTML / CSS / JS</p>
+        <a class="btn" href="">VISIT WEBSITE</a>
+      </div>
+    </div>
 
-  This project was a front-end  challenge from Frontend Mentor. It’s a platform that 
-  enables you to practice building websites to a design and project brief. Each challenge 
-  includes mobile and desktop designs to show how the website should look at different 
-  screen sizes. Creating these projects has helped me refine my workflow and solve 
-  real-world coding problems. I’ve learned something new with each project, helping 
-  me to improve and adapt my style.
+    <!-- BACKGROUND  -->
 
-  Static Previews
+    <div class="background">
+      <h3 class="background__title">Project Background</h3>
+      <p class="background__sub"> This project was a front-end challenge from Frontend Mentor. It’s a platform that
+  enables you to practice building websites to a design and project brief. Each challenge
+  includes mobile and desktop designs to show how the website should look at different
+  screen sizes. Creating these projects has helped me refine my workflow and solve
+  real-world coding problems. I’ve learned something new with each project, helping
+  me to improve and adapt my style.</p>
+    </div>
 
-  Bookmark
-  Previous Project
+    <div class="previews">
+      <h3 class="previews__title">Static Previews</h3>
+      <picture class="previews__img1">
+        <source media="(min-width: 64rem)" srcset="images/detail/desktop/image-insure-preview-1@2x.jpg">
+        <source media="(min-width: 48rem)" srcset="images/detail/tablet/image-insure-preview-1@2x.jpg">
+        <img src="images/detail/mobile/image-insure-preview-1@2x.jpg" alt="">
+      </picture>
+      <picture>
+        <source media="(min-width: 64rem)" srcset="images/detail/desktop/image-insure-preview-2@2x.jpg">
+        <source media="(min-width: 48rem)" srcset="images/detail/tablet/image-insure-preview-2@2x.jpg">
+        <img src="images/detail/mobile/image-insure-preview-2@2x.jpg" alt="">
+      </picture>
+    </div>
+  </section>
 
-  Fylo
-  Next Project
+  <section class="project__nav">
+    <div class="nav-div left">
+      <img src="images/icons/arrow-left.svg" alt="">
+      <div class="nav-text">
+        <h3 class="nav-name">Bookmark</h3>
+        <p class="nav-direction">Previous Project</p>
+      </div>
+    </div>
+    <div class="nav-div right">
+      <img src="images/icons/arrow-right.svg" alt="">
+      <div class="nav-text">
+        <h3 class="nav-name">Fylo</h3>
+        <p class="nav-direction">Next Project</p>
+      </div>
+    </div>
+  </section>
 
-  Interested in doing a project together?
 
-  Contact Me
+  <!-- CONTACT  -->
+
+  <section class="contact">
+    <h2>Interested in doing a project together?</h2>
+    <div class="line"></div>
+    <a href="">CONTACT ME</a>
+  </section>
+
+
+  <!-- FOOTER  -->
+
+  <footer>
+    <div class="footer-nav">
+      <img src="images/icons/logo.svg" alt="">
+      <ul>
+        <li class="p-2"><a href="home">HOME</a></li>
+        <li class="p-2"><a href="portfolio">PORTFOLIO</a></li>
+        <li class="p-2"><a href="contact">CONTACT ME</a></li>
+      </ul>
+    </div>
+    <div class="social-icons">
+      <img src="images/icons/github.svg" alt="">
+      <img src="images/icons/twitter.svg" alt="">
+      <img src="images/icons/linkedin.svg" alt="">
+    </div>
+  </footer>
+
+
 
 </body>
+
 </html>
