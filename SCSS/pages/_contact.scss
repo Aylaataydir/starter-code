@@ -1,0 +1,51 @@
+@use "../abstracts/variables" as vars;
+
+.contact__page {
+    margin-block-end: 5rem;
+}
+
+.contact__page .social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-block-start: 1.5rem;
+}
+
+
+.contact__me__form div {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: 1.5rem;
+}
+
+.contact__me__form input,
+textarea {
+    background-color: vars.$color-text-field;
+    border: none;
+    outline: none;
+    font-size: .8125rem;
+    padding-block: .5625rem;
+    padding-inline-start: 1rem;
+
+}
+
+.contact__me .btn {
+    margin-block-start: 1.5rem;
+    border: none;
+    background-color: vars.$color-primary-dark-blue;
+    color: white;
+    font-size: .75rem;
+    padding-inline-start: 2rem;
+}
+
+.active {
+    border: 2px solid #5FB4A2 !important;
+}
+
+.error-message {
+    display: none;
+    font-size: .75rem;
+    color: red;
+    font-weight: 600;
+    font-style: italic;
+}

@@ -139,6 +139,12 @@ section {
   border: 1px solid #33323D;
   width: -moz-fit-content;
   width: fit-content;
+  transition: all 0.5s ease;
+}
+
+.btn:hover, .contact a:hover {
+  background-color: #33323D;
+  color: white;
 }
 
 .container__text {
@@ -200,6 +206,9 @@ section {
   padding-block: 1.5rem;
   border-block: 1px solid rgb(206, 204, 204);
 }
+.project__nav .nav-div .nav-name a:hover {
+  color: #5FB4A2;
+}
 .project__nav .nav-div.right {
   border-inline-start: 1px solid rgb(206, 204, 204);
 }
@@ -245,6 +254,10 @@ footer a {
 }
 .navbar .hamburger {
   display: block;
+}
+
+.navbar a:hover {
+  color: #5FB4A2;
 }
 
 @media (min-width: 48rem) {
@@ -345,6 +358,14 @@ footer a {
   .container.fylo .container__text {
     order: 1;
   }
+  .contact__page {
+    margin-block-end: 6rem;
+  }
+  .contact__page .card.contact__page__text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
   .card {
     display: grid;
     margin-block: 2.5rem;
@@ -439,6 +460,13 @@ footer a {
     margin-inline-start: 5.9375rem !important;
     margin-block-end: 9.375rem !important;
   }
+  .contact__page {
+    margin-block-end: 6.875rem;
+  }
+  .contact__page .card.contact__page__text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   .project__content {
     display: grid;
     margin-block-start: 7.1875rem;
@@ -461,6 +489,54 @@ footer a {
     margin-block-end: 4rem;
   }
 }
+.contact__page {
+  margin-block-end: 5rem;
+}
+
+.contact__page .social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-block-start: 1.5rem;
+}
+
+.contact__me__form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.contact__me__form input,
+textarea {
+  background-color: #EAEAEB;
+  border: none;
+  outline: none;
+  font-size: 0.8125rem;
+  padding-block: 0.5625rem;
+  padding-inline-start: 1rem;
+}
+
+.contact__me .btn {
+  margin-block-start: 1.5rem;
+  border: none;
+  background-color: #203A4C;
+  color: white;
+  font-size: 0.75rem;
+  padding-inline-start: 2rem;
+}
+
+.active {
+  border: 2px solid #5FB4A2 !important;
+}
+
+.error-message {
+  display: none;
+  font-size: 0.75rem;
+  color: red;
+  font-weight: 600;
+  font-style: italic;
+}
+
 .hero {
   margin-block-end: 6rem;
 }
@@ -473,13 +549,21 @@ footer a {
 .hero__btn {
   background-color: #203A4C;
   width: 12.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 .hero__btn p {
   color: white;
   margin-inline: auto;
 }
 .hero__btn img {
-  margin: 1.125rem;
+  padding: 1.125rem;
+}
+.hero__btn img:hover {
+  background-color: #677471;
+}
+.hero__btn:hover {
+  background-color: #5FB4A2;
 }
 
 .about {

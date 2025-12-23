@@ -43,6 +43,12 @@ section {
     letter-spacing: .125rem;
     border: 1px solid vars.$color-primary-grayish-dark-blue;
     width: fit-content;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    background-color: vars.$color-primary-grayish-dark-blue;
+    color: white;
 }
 
 // CONTAINER (home about, portfolio )
@@ -108,7 +114,7 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-block-end: 4rem;
-   
+
 
     img {
         margin-block-end: 1rem;
@@ -121,7 +127,11 @@ section {
 
     .nav-div {
         padding-block: 1.5rem;
-         border-block: 1px solid rgb(206, 204, 204);
+        border-block: 1px solid rgb(206, 204, 204);
+
+        .nav-name a:hover {
+            color: vars.$color-primary-cyan;
+        }
     }
 
     .nav-div.right {

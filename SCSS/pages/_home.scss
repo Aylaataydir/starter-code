@@ -22,17 +22,29 @@
         @extend .flex;
         background-color: vars.$color-primary-dark-blue;
         width: 12.5rem;
+        cursor: pointer;
+        transition: all 0.5s ease;
 
         p {
             color: white;
             margin-inline: auto;
         }
 
+        //!!!!!! burayi yap
 
         img {
-            margin: 1.125rem;
+            padding: 1.125rem;
+            &:hover{
+                background-color:  #677471;
+            }
+        }
+
+        &:hover {
+            background-color: vars.$color-primary-cyan;
         }
     }
+
+
 }
 
 
